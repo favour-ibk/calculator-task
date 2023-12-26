@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    
+    <div class="main">
+        <form>
+            <input type="text" name="display" id="calculator" readonly placeholder="0.">
+
+            <div>
+                <button type="button" onclick="calculator.value += 0">0</button>
+                <button type="button" onclick="calculator.value += 1">1</button>
+                <button type="button" onclick="calculator.value += 2">2</button>
+                <button type="button" onclick="calculator.value += 3">3</button>
+            </div> <br>
+
+            <div>
+                <button type="button" onclick="calculator.value += 4">4</button>
+                <button type="button" onclick="calculator.value += 5"><b>5</b></button>  
+                <button type="button" onclick="calculator.value += 6">6</button>
+                <button type="button" onclick="calculator.value += 7">7</button>
+            </div> <br>
+
+        
+            <div>
+                <button type="button" onclick="calculator.value += 8">8</button>
+                <button type="button" onclick="calculator.value += 9">9</button>  
+                <button type="button" onclick="calculator.value =Math.sqrt(calculator.value)">√</button>
+                <button type="button" onclick="calculator.value = eval(calculator.value)/100">%</button>
+            </div> <br>
+
+            <div>
+                <button type="button" onclick="calculator.value += '+'">+</button>
+                <button type="button" onclick="calculator.value += '-'">-</button>
+                <button type="button" onclick="calculator.value += '*'">x</button>
+                <button type="button" onclick="calculator.value += '/'">/</button>
+            </div> <br>
+            
+            <div>
+                <button type="button" onclick="calculator.value += '.'">.</button>
+                <button type="button" onclick="calculator.value =eval(calculator.value)">=</button>  
+                <button type="button" onclick="calculator.value =''">CLR</button>
+                <button type="button" onclick="calculator.value =calculator.value.toString().slice(0,-1)">DEL</button>
+            </div> <br>
+        </form>
+    </div>    
+</body>
+</html>
